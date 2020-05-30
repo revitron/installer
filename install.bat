@@ -1,5 +1,6 @@
 @echo off
 
+set pwd=%CD%
 set install=%CD%\jarvis-pyrevit
 set repo=https://github.com/revitron/pyRevit.git
 set jarvis=https://github.com/revitron/jarvis.git
