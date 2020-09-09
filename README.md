@@ -6,6 +6,8 @@ A custom installer for the [Revitron pyRevit fork](https://github.com/revitron/p
 
 ## Usage
 
+> Note that the installer requires Git to be installed on your system!
+
 1. Right-click [here](https://raw.githubusercontent.com/revitron/installer/master/install.bat) to download the installer
 2. Move the `install.bat` to the directory, where you want to install pyRevit
 3. Double-click the installer
