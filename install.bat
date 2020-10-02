@@ -1,7 +1,7 @@
 @echo off
 
 set pwd=%CD%
-set install=%CD%\rpm-pyrevit
+set install=%CD%\pyRevit
 set pyrevit=https://github.com/revitron/pyRevit.git
 set rpm=https://github.com/revitron/rpm.git
 set revitron=https://github.com/revitron/revitron.git
