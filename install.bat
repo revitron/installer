@@ -4,7 +4,6 @@ set pwd=%CD%
 set install=%CD%\rpm-pyrevit
 set pyrevit=https://github.com/revitron/pyRevit.git
 set rpm=https://github.com/revitron/rpm.git
-set rpmUI=https://github.com/revitron/rpm-ui.git
 set revitron=https://github.com/revitron/revitron.git
 set revitronUi=https://github.com/revitron/revitron-ui.git
 set extensions=%install%\extensions
@@ -22,8 +21,7 @@ timeout 3
 git clone %pyrevit% %install%
 
 echo Installing core extensions ...
-%bin%\pyrevit extend lib rpm %rpm% --dest=%extensions%
-%bin%\pyrevit extend ui rpm-ui %rpmUI% --dest=%extensions%
+%bin%\pyrevit extend ui rpm %rpmUI% --dest=%extensions%
 %bin%\pyrevit extend lib revitron %revitron% --dest=%extensions%
 %bin%\pyrevit extend ui revitron-ui %revitronUi% --dest=%extensions%
 
@@ -32,7 +30,7 @@ chcp 65001
 
 cd /D %AppData%\Autodesk\Revit\Addins
 
-for /D %%i in (2019 2020) do (
+for /D %%i in (2019 2020 2021) do (
 
     echo Removing legacy pyRevit addin for Revit %%i ...
     del "%CD%\%%i\pyRevit.addin"
@@ -43,7 +41,9 @@ rmdir /q /s "%AppData%\pyRevit"
 
 cd /D %ProgramData%\Autodesk\Revit\Addins
 
-for /D %%i in (2019 2020) do (
+for /D %%i in (2019 2020 2021) do (
+
+	del "%CD%\%%i\rpm.addin"
 
 	echo Adding addin description file to Revit %%i ...
 	(
@@ -57,7 +57,7 @@ for /D %%i in (2019 2020) do (
 		echo   ^<VendorId^>eirannejad^</VendorId^>
 		echo   ^</AddIn^>
 		echo ^</RevitAddIns^>
-	) > "%CD%\%%i\rpm.addin"
+	) > "%CD%\%%i\pyRevit.addin"
 
 )
 
