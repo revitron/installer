@@ -21,7 +21,7 @@ timeout 3
 git clone %pyrevit% %install%
 
 echo Installing core extensions ...
-%bin%\pyrevit extend ui rpm %rpmUI% --dest=%extensions%
+%bin%\pyrevit extend ui rpm %rpm% --dest=%extensions%
 %bin%\pyrevit extend lib revitron %revitron% --dest=%extensions%
 %bin%\pyrevit extend ui revitron-ui %revitronUi% --dest=%extensions%
 
