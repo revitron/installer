@@ -1,12 +1,12 @@
+![](https://raw.githubusercontent.com/revitron/revitron/master/svg/revitron-readme.svg)
+
 # Revitron pyRevit Installer
 
-A custom installer for the [Revitron pyRevit fork](https://github.com/revitron/pyRevit) including, [Revitron](https://github.com/revitron/revitron) and [RPM](https://github.com/revitron/rpm).
-
-![](https://raw.githubusercontent.com/revitron/revitron/master/svg/revitron-readme.svg)
+A custom bundle installer including a [pyRevit fork](https://github.com/revitron/pyRevit), [Revitron](https://github.com/revitron/revitron) and [RPM](https://github.com/revitron/rpm).
 
 ## Usage
 
-> Note that the installer requires Git to be installed on your system!
+Note that the installer requires [Git](https://git-scm.com/) to be installed on your system!
 
 1. In case **Git** is not already installed &mdash; [download](https://git-scm.com/download/win) and install Git.
 2. Right-click [here](https://raw.githubusercontent.com/revitron/installer/master/install.bat) to download the installer. 
