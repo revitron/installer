@@ -8,6 +8,8 @@ A custom bundle installer including a [pyRevit fork](https://github.com/revitron
 
 > :point_up: Note that the installer requires [Git](https://git-scm.com/) to be installed on your system!
 
+The bundle can be installed as follows:
+
 1. In case **Git** is not already installed &mdash; [download](https://git-scm.com/download/win) and install Git.
 2. Right-click [here](https://raw.githubusercontent.com/revitron/installer/master/install.bat) to download the installer. 
    Make sure it keeps the `.bat` extension.
