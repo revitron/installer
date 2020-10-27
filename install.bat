@@ -63,3 +63,5 @@ echo Clearing caches ...
 %bin%\pyrevit caches clear --all
 
 cd /D %pwd%
+
+pause
