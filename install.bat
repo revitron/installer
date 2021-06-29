@@ -39,7 +39,7 @@ rmdir /q /s "%AppData%\pyRevit"
 
 cd /D %ProgramData%\Autodesk\Revit\Addins
 
-for /D %%i in (2017 2018 2019 2020 2021) do (
+for /D %%i in (2017 2018 2019 2020 2021 2022) do (
 
 	del "%CD%\%%i\rpm.addin"
 
