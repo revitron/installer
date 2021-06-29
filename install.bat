@@ -28,7 +28,7 @@ chcp 65001
 
 cd /D %AppData%\Autodesk\Revit\Addins
 
-for /D %%i in (2017 2018 2019 2020 2021) do (
+for /D %%i in (2017 2018 2019 2020 2021 2022) do (
 
     echo Removing legacy pyRevit addin for Revit %%i ...
     del "%CD%\%%i\pyRevit.addin"
