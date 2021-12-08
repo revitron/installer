@@ -49,7 +49,7 @@ for /D %%i in (2017 2018 2019 2020 2021 2022) do (
 		echo ^<RevitAddIns^>
 		echo   ^<AddIn Type="Application"^>
 		echo     ^<Name^>PyRevitLoader^</Name^>
-		echo     ^<Assembly^>%bin%\engines\IPY278\pyRevitLoader.dll^</Assembly^>
+		echo     ^<Assembly^>%bin%\engines\IPY2711PR\pyRevitLoader.dll^</Assembly^>
 		echo     ^<AddInId^>B39107C3-A1D7-47F4-A5A1-532DDF6EDB5E^</AddInId^>
 		echo     ^<FullClassName^>PyRevitLoader.PyRevitLoaderApplication^</FullClassName^>
 		echo   ^<VendorId^>eirannejad^</VendorId^>
